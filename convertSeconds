@@ -1,0 +1,9 @@
+def convertSeconds(seconds):
+  time={'hourse':0, 'minits': 0, 'seconds': 0}
+  time['hourse'] = seconds // 60 // 60
+  time['minits'] = (seconds // 60 ) % 60
+  time['seconds'] = seconds % 60
+  return time
+seconds = int(input('please enter Seconds for convert: '))
+time = convertSeconds(seconds)
+print(f"yout time is= {time['hourse']} : {time['minits']} : {time['seconds']} ")
