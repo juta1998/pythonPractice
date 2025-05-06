@@ -1,0 +1,10 @@
+def getReverce(strings):
+  r_string=[]
+  for string in range(len(strings)):
+    r_string.append(strings.pop())
+  return r_string
+
+strings= list(input('please enter strings : '))
+strings= getReverce(strings)
+for string in strings:
+  print(string, end='')
