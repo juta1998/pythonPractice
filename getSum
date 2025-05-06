@@ -1,0 +1,9 @@
+def getSum(number):
+  sum= 0
+  while number!= 0:
+    sum = (number % 10) + sum
+    number = number // 10
+  return sum
+  
+number= int(input('please enter a number fo sum digits: '))
+getSum(number)
