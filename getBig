@@ -1,0 +1,8 @@
+def getBig(arr):
+
+  return max(arr)
+
+arr= []
+for i in range(3):
+  arr.append(int(input(f'please enter a number {i}: ')))
+getBig(arr)
